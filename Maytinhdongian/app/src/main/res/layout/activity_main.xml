@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2FBA0F"
+    android:orientation="vertical"
+    >
+    //Số A
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvsoA"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="#EC9B10"
+
+            android:paddingLeft="20dp"
+            android:text="Số A"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/edtA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#FFFDFD"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    //Số B
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvsoB"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="#EC9B10"
+            android:paddingLeft="20dp"
+            android:text="Số B"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/edtB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#FFFFFF"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    //Nút chức năng
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+//Cộng
+
+        <Button
+            android:id="@+id/btnCong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:onClick="Xuly_Cong"
+            android:text="+"
+            android:textSize="30dp"></Button>
+
+//Trừ
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:layout_marginTop="10dp"
+            android:id="@+id/btnTru"
+            android:textSize="30dp"
+            android:onClick="Xuly_Tru">
+        </Button>
+
+//Nhân
+
+        <Button
+            android:id="@+id/btnNhan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Xuly_Nhan"
+            android:layout_marginTop="10dp"
+            android:text="*"
+            android:textSize="30dp">
+        </Button>
+
+//Chia
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:id="@+id/btnChia"
+            android:layout_marginTop="10dp"
+            android:textSize="30dp"
+            android:onClick="Xuly_Chia">
+        </Button>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="#FFFFFF"
+        android:text="Kết quả"
+        android:textColor="@color/black"
+        android:textSize="24dp" />
+</LinearLayout>

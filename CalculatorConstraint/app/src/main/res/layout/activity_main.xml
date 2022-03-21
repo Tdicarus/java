@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDFDFD"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/soA"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="53dp"
+        android:text="Số A"
+        android:textAlignment="center"
+        android:textSize="26dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="30dp"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/soA" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="11dp"
+        android:text="Số B"
+        android:textAlignment="center"
+        android:textSize="26dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtA" />
+
+    <EditText
+        android:id="@+id/edtB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="212dp"
+        android:layout_marginEnd="30dp"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Cong"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:onClick="Xuly_Cong"
+        android:text="+"
+        android:textSize="26dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtB" />
+
+    <Button
+        android:id="@+id/Tru"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="21dp"
+        android:onClick="Xuly_Tru"
+        android:text="-"
+        android:textSize="26dp"
+        app:layout_constraintStart_toEndOf="@+id/Cong"
+        app:layout_constraintTop_toBottomOf="@+id/edtB" />
+
+    <Button
+        android:id="@+id/Nhan"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:onClick="Xuly_Nhan"
+        android:text="*"
+        android:textSize="26dp"
+        app:layout_constraintStart_toEndOf="@+id/Tru"
+        app:layout_constraintTop_toBottomOf="@+id/edtB" />
+
+    <Button
+        android:id="@+id/Chia"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:onClick="Xuly_Chia"
+        android:text="/"
+        android:textSize="26dp"
+        app:layout_constraintStart_toEndOf="@+id/Nhan"
+        app:layout_constraintTop_toBottomOf="@+id/edtB" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Tru" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
